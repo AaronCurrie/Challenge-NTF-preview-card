@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main: hsl(217, 54%, 11%);
+    --dark-blue-card: hsl(216, 50%, 16%);
+    --dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'outfit';
+    background-color: var(--Very-dark-blue-main);
+}
+
+main {
+    margin: clamp(5%, 15%, 100px) auto;
+    width: clamp(250px, 70%, 400px);
+    border: 1px solid var(--Very-dark-blue-main);
+    background-color: var(--dark-blue-card);
+    border-radius: 15px;
+    box-shadow: 0 25px 50px 40px hsl(217, 54%, 9%);
+}
+
+figure {
+    position: relative;
+    width: 90%;
+    margin: 5% auto;
+    border: 1px solid var(--dark-blue-card);
+}
+
+figure img {
+    width:100%;
+    display: block;
+    border-radius: 15px;
+}
+
+.overlay {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    border-radius: 15px;
+    transition: all 0.5s linear;
+}
+
+.overlay img {
+    width: 15%;
+    margin: auto;
+}
+
+.overlay:hover {
+    background-color: hsla(178, 100%, 50%, 0.4);
+    opacity: 1;
+    
+}
+
+h1 {
+    margin: 5% 5%;
+    font-size: 1.5rem;
+    color: var(--White);
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--Cyan);
+    transition: all 0.5s linear;
+}
+
+a h1:hover {
+    color: var(--Cyan);
+    transition: all 0.5s linear;
+}
+
+h2 {
+    margin: 5% 5%;
+    font-size: 1.2rem;
+    color: var(--Soft-blue);
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1rem;
+    color: var(--Cyan);
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1rem;
+    color: var(--Soft-blue);
+    font-weight: 300;
+}
+
+h4 a {
+    color: var(--White);
+    text-decoration: none;
+}
+
+.details {
+    display: flex;
+    margin: 5% 5%;
+    justify-content: space-between;
+}
+
+.details img {
+    height: auto;
+}
+
+.cost {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5%;
+    flex-grow:2;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5%;
+    flex-grow:2;
+}
+
+.break {
+    border-bottom: 1px solid var(--dark-blue-line);
+    margin: 5% 5%;
+}
+
+.creator {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    margin: 5% 5% 10% 5%;
+}
+
+.creator img {
+    width: 10%;
+}
